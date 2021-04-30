@@ -214,7 +214,7 @@
     var widgetOptions = eval(
       $elem.closest("div[data-dynamicform]").attr("data-dynamicform")
     );
-    var id = $elem.attr("id");
+    var id = Math.random().toString(36).substring(7); //$elem.attr("id");
     var newID = id;
 
     if (id !== undefined) {
