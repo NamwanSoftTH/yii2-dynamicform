@@ -371,14 +371,14 @@
 
     // "kartik-v/yii2-widget-datepicker"
     var $hasDatepicker = $(widgetOptionsRoot.widgetItem).find(
-      "[data-krajee-datepicker]"
+      "[data-krajee-kvdatepicker]"
     );
     if ($hasDatepicker.length > 0) {
       $hasDatepicker.each(function () {
         $(this).parent().removeData().datepicker("remove");
         $(this)
           .parent()
-          .datepicker(eval($(this).attr("data-krajee-datepicker")));
+          .datepicker(eval($(this).attr("data-krajee-kvdatepicker")));
       });
     }
 
